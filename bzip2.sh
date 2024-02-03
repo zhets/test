@@ -97,14 +97,13 @@ for i do
   if test $decomp -eq 0; then
     sed 1q $0 >> $tmp
     sed "s|^if tail|if $tail|" >> $tmp <<'EOF'
-skip=23
+skip=33
 # ----------------------------------------------------------------------------
 # Arthur : ==[ Xdxl vpn store ]==
 # From : ==[ North Lampung ]==
 # Telegram : ==[ t.me/xdxl_store ]==
 # Channel : ==[ t.me/xdxl_vpn ]==
 # ----------------------------------------------------------------------------
-# // Please Not Colong My Script ya kontol
 set -C
 umask=`umask`
 umask 77
@@ -135,7 +134,7 @@ EOF
 
   else
     # decompression
-    skip=23
+    skip=33
     if sed -e 1d -e 2q "$i" | grep "^skip=[0-9]*$" >/dev/null; then
       eval `sed -e 1d -e 2q "$i"`
     fi

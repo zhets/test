@@ -28,8 +28,8 @@ banner = """
      dZP        qKRb
     dZP          qKKb
    fZP            SMMb
-   HZM            MMMM    {}Coded by {}: {}Syhrül
-{}   FqM            MMMM    {}FB       {}: {}fb.com/sarul.arif.5
+   HZM            MMMM    {}Coded by {}: {}Xdxl
+{}   FqM            MMMM    {}Telegram {}: {}t.me/xdxl_store
 {} __|'\ .        |\{}dS qML
 {} |    `.       | `' \{}Zq
 {}_)      \.{}___.{},|     .'
@@ -44,7 +44,7 @@ banner2 = """
 print banner
 print banner2
 
-def dekrip():
+def decryptfile():
    try:
        sc = raw_input(ask + W + "Script " + G + "> " + W)
        f = open(sc,'r')
@@ -69,7 +69,7 @@ def dekrip():
    except IOError:
        print (eror + " File Not Found!")
 
-def enkrip():
+def encfile():
    try:
        script = raw_input(ask + W + "Script " + G + "> " + W)
        output = raw_input(ask + W + "Output " + G + "> " + W)
@@ -84,8 +84,8 @@ def enkrip():
 takok = raw_input(W + "Choose" + G + " > ")
 
 if takok == "1" or takok == "01":
-   enkrip()
+   encfile()
 elif takok == "2" or takok == "02":
-   dekrip()
+   decryptfile()
 else:
    print (eror + " Wrong input")
